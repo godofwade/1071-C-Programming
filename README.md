@@ -1,4 +1,4 @@
-# 1071-G19-lalala
+# 1071-C-Programming
 
 week1
 welcome.cpp
