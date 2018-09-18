@@ -1,6 +1,6 @@
 # 1071-C-Programming
 
-week1
+week1/n
 welcome.cpp
 temperature.cpp
 equation.cpp
