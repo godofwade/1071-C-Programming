@@ -7,3 +7,9 @@ welcome.cpp
 temperature.cpp
 
 equation.cpp
+
+week2
+
+leap year identification.cpp
+
+seconds conversion.cpp
