@@ -1,6 +1,6 @@
 # 1071-C-Programming
 
-week1
+Week 01
 
 welcome.cpp
 
@@ -8,7 +8,8 @@ temperature.cpp
 
 equation.cpp
 
-week2
+
+Week 02
 
 leap year identification.cpp
 
