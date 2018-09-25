@@ -1,0 +1,48 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	
+    float bmi,w,h;
+	printf("Enter your height(cm):");
+	scanf("%f",&h);
+    h=h/100;
+	printf("Enter your weight(kg):");
+	scanf("%f",&w);
+	while(h>0||w>0)
+	{
+		bmi=w/(h*h);
+		printf("your BMI is %.1f\n",bmi);
+		if(bmi<18.5)
+		{
+			printf("your weight is overlight\n");
+		}
+		else if(bmi>=18&&bmi<=24)
+		{
+			printf("your BMI is a normal value\n");
+		}
+		else if(bmi>=24&&bmi<27)
+		{
+			printf("you are overweight\n");
+		}
+		else if(bmi>=27&&bmi<30)
+		{
+			printf("you are a little fat\n");
+		}
+		else if(bmi>=30&&bmi<35)
+		{
+			printf("you are midium fat\n");
+		}
+		else
+		{
+			printf("you are very fat\n");
+		}
+		printf("Enter your height(cm):");
+	    scanf("%f",&h);
+	    h=h/100;
+	    printf("Enter your weight(kg):");
+	    scanf("%f",&w);
+	}
+	return 0;
+}
