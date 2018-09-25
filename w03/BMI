@@ -10,7 +10,7 @@ int main()
     h=h/100;
 	printf("Enter your weight(kg):");
 	scanf("%f",&w);
-	while(h>0||w>0)
+	while(h>0&&w>0)
 	{
 		bmi=w/(h*h);
 		printf("your BMI is %.1f\n",bmi);
