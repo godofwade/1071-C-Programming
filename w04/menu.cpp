@@ -39,9 +39,62 @@ int main()
 		case 2:
 		    printf("Enter height and type:");
 			scanf("%d %d",&h,&t);
-			for()
+			if(t==1)
 			{
-				
+				for(int i=1;i<=h;i++)
+			{
+				for(int j=1;j<=i;j++)
+				{
+					if(i==1||i==h||j==1||j==i)
+					printf("*");
+					else
+					printf(" ");
+				}
+				printf("\n");
+			}
+			
+			}
+			else if(t==2)
+			{
+				for(int i=h;i>=1;i--)
+				{
+					for(int j=1;j<=h;j++)
+					{
+						if(i==1||j==h||j==i)
+						printf("*");
+					    else
+					    printf(" ");
+					}
+					printf("\n");
+				}
+			}
+			else if(t==3)
+			{
+				for(int i=1;i<=h;i++)
+				{
+					for(int j=h;j>=1;j--)
+					{
+						if(i==1||j==h||j==i)
+						printf("*");
+					    else
+					    printf(" ");
+					}
+					printf("\n");
+				}
+			}
+			else if(t==4)
+			{
+				for(int i=h;i>=1;i--)
+				{
+					for(int j=h;j>=1;j--)
+					{
+						if(i==1||j==h||j==i)
+						printf("*");
+					    else
+					    printf(" ");
+					}
+					printf("\n");
+				}
 			}
 			
 			break;	
