@@ -88,7 +88,7 @@ int main()
 				{
 					for(int j=h;j>=1;j--)
 					{
-						if(i==1||j==h||j==i)
+						if(i==h||j==1||j==i)
 						printf("*");
 					    else
 					    printf(" ");
