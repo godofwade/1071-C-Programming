@@ -16,7 +16,7 @@ void drawrectangle(int h,int w)
 		
 }
 
-void drawvertical(int h,int t)
+void drawverticaltriangle(int h,int t)
 {
 	if(t==1)
 			{
@@ -105,7 +105,7 @@ int main()
 			case 2:
 		    printf("Enter height and type:");
 			scanf("%d %d",&h,&t);
-			drawvertical(h,t);
+			drawverticaltriangle(h,t);
 			break;
 	}
 	
