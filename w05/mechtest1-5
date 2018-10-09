@@ -1,0 +1,143 @@
+#include<stdio.h>
+
+
+void prchar(char c,int n)
+{
+	for(int i=1;i<=n;i++)
+	{
+		printf("%c",c);
+	}
+}
+
+int encode(int n)
+{
+	int a,b,c,d,t;
+	
+	a=n/1000;
+	b=(n-(a*1000))/100;
+	c=(n-(a*1000)-(b*100))/10;
+	d=(n-(a*1000)-(b*100)-(c*10));
+	a=a+5;
+	if(a>10)
+	a=a-10;
+
+	return t=a*10+b+c*1000+d*100;
+}
+
+int decode(int n)
+{
+	int a1,b2,c3,d4,tt;
+	a1=n/1000;
+	b2=(n-(a1*1000))/100;
+	c3=(n-(a1*1000)-(b2*100))/10;
+	d4=(n-(a1*1000)-(b2*100)-(c3*10));
+	c3=c3-5;
+	if(c3<0)
+	c3=c3+10;
+	
+	return tt=c3*1000+a1*10+b2+d4*100;
+}
+
+
+int main()
+{
+	int c;
+	
+	printf("(1) Arithmetic Coputation\n");
+	printf("(2)List BMI ranges\n");
+	printf("(3)Draw Four Vertical Triangle\n");
+	printf("(4)encode(n)\n");
+	printf("(5)decode(n)\n");
+	printf("(6)Exit\n");
+	printf("=> ");
+	scanf("%d",&c);
+	while(1)
+	{
+		if(c==6)
+			break;
+		switch(c)
+		{
+			case 1:
+					int a,b;
+					int add,mi,mu,d,f;
+					printf("Enter two integers:");
+					scanf("%d %d",&a,&b);
+					add=a+b;
+					printf("%d + %d = %d\n",a,b,add);
+					mi=a-b;
+					printf("%d - %d = %d\n",a,b,mi);
+					mu=a*b;
+					printf("%d * %d = %d\n",a,b,mu);
+					d=a/b;
+					printf("%d / %d = %d\n",a,b,d);
+					f=a%b;
+					printf("%d %% %d = %d\n",a,b,f);
+					
+				break;
+			case 2:
+					int h1,h2;
+					float w1,w2;
+					
+					printf("Enter height (-1 to exit): ");
+					scanf("%d %d",&h1,&h2);
+					
+					for(float i=h1;i<=h2;i++)
+				 	{
+				 		w1=((i/100)*(i/100)*18.5);
+				 		w2=((i/100)*(i/100)*24);
+				 		printf("%.0f cm: %.1f ~ %.1f (kg)\n",i,w1,w2);
+					}
+					printf("\n");
+					
+				break;
+			case 3:
+					int h;
+	
+					printf("Enter height (-1 to exit):");
+					scanf("%d",&h);
+					
+					for(int i=1;i<=h;i++)
+					{
+						prchar(' ',h-i);
+						prchar('*',i);
+						prchar(' ',2);
+						prchar('*',i);
+						printf("\n");
+						
+					}
+				break;
+			case 4:
+					int n;
+					int z;
+					
+					printf("Enter N (-1 to exit): ");
+					scanf("%d",&n);
+					z=n;
+					n=encode(n);
+					printf("encode(%d) = %d\n",z,n);	
+				break;
+			case 5:
+					
+				
+					
+					printf("Enter N (-1 to exit): ");
+					scanf("%d",&n);
+					z=n;
+					n=decode(n);
+					printf("decode(%d) = %d\n",z,n);
+				break;	
+		}
+		printf("(1) Arithmetic Coputation\n");
+		printf("(2)List BMI ranges\n");
+		printf("(3)Draw Four Vertical Triangle\n");
+		printf("(4)encode(n)\n");
+		printf("(5)decode(n)\n");
+		printf("(6)Exit\n");
+		printf("=> ");
+		scanf("%d",&c);
+	}
+
+	
+	printf("Bye! Coding by 407410355");	
+	return 0;
+}
