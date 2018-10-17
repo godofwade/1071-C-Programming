@@ -22,7 +22,7 @@ seconds conversion.cpp
 
 ## Week 05
 
-## 
+##  Week 06
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNTE2NDQ4XX0=
+eyJoaXN0b3J5IjpbLTQ0MDU2Mzg1OCwxMTM1MTY0NDhdfQ==
 -->
