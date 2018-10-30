@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<math.h>
+#include<ctype.h>
+
+int csqrt(int n)
+{
+	int s;
+	s=sqrt(n);
+	if(s*s==n)
+	return 1;
+	else
+	return 0;
+}
+
+int main()
+{
+	int n;
+	int t;
+	char cont='Y';
+	
+	while(cont=='Y')
+	{
+		printf("Enter N: ");
+		scanf("%d",&n);
+		
+		t=sqrt(n);
+		
+		if(csqrt(n))
+		{
+			printf("Yes. %d = %d x %d\n",n,t,t);	
+		}
+		else
+		{
+			printf("No.\n");
+		}
+		
+		printf("Continue (Y/N): ");	
+		getchar();
+		cont=toupper(getchar());		
+				
+	}	
+
+
+	printf("Coding by 407410355 李為龍"); 
+	return 0;	
+}
