@@ -1,0 +1,63 @@
+#include<stdio.h>
+
+
+
+void prchar(int n,char c)
+{
+	for(int i=1;i<=n;i++)
+	{
+		printf("%c",c);
+		
+	}
+}
+
+void drawRect(int h,int w)
+{
+	for(int i=1;i<=h;i++)
+	{
+		for(int j=1;j<=w;j++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}	
+}
+
+void rdrawRect(int h,int w)
+{
+	if(h>0)
+	{
+		for(int i=1;i<=w;i++)
+		{
+			printf("*");	
+		}
+			printf("\n");	
+			rdrawRect(h-1,w);			
+	}
+
+}
+
+int main()
+{
+	int h,w;
+	
+	printf("Enter height: ");
+	scanf("%d",&h);
+	printf("Enter width: ");
+	scanf("%d",&w);
+	printf("\n\n");
+	
+	printf("Draw using iteration\n");
+
+	drawRect(h,w);
+	
+	printf("\n\n");
+	
+	printf("Draw using recursion\n");
+	
+	rdrawRect(h,w);
+	
+	printf("Coding by 407410355 李為龍");	
+	return 0;
+}
+
