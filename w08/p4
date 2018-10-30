@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+#define max 50
+
+int main()
+{
+	int d[max]={};
+	int n=0;
+	
+	printf("Enter a series of scores between 0~100(-1 to exit).\n");
+	while(d[n]!=-1)
+	{
+		scanf("%d\n",d[n]);		
+	}
+	printf("Scores listing:\n");
+	for(int i=0;i>=n;i++)
+	{
+		printf("%3d ",d[i]);		
+	}
+
+	
+	
+	
+	return 0;
+}
