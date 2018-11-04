@@ -36,8 +36,35 @@ void magic_diag(int m[][max],int n)
 		m[row][col]=i;
 
 	}
+
 	
 }
+
+void knight(int m[][max],int n)
+{
+	int row=n-1;
+	int col=n/2;
+	
+	m[row][col]=1;
+	
+	for(int i=2;i<=n*n;i++)
+	{
+		if(i%n==1)
+		{
+			row=(row-1+n)%n;
+		}
+		else
+		{
+			row=(row-2+n)%n;
+			col=(col+1+n)%n;
+		}
+		
+		m[row][col]=i;
+		
+	}
+
+}
+
 
 int main()
 {
@@ -50,6 +77,12 @@ int main()
 	
 	printf("Diagonal Move\n");
 	magic_diag(m,n);
+	prarr(m,n);
+	
+	printf("\n");
+	
+	printf("Knight Move\n");
+	knight(m,n);
 	prarr(m,n);
 		
 }
