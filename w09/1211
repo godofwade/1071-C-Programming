@@ -1,0 +1,69 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+#define max 100
+
+/*
+void randgen(int year[],int n)
+{
+	for(int i=0;i<n;i++)
+	{
+		year[i]=rand()%
+	}
+}
+*/
+struct Date
+{
+	int year;
+	int month;
+	int day;
+	
+};
+
+struct lot
+{
+	Date date;
+	int num[6];
+};
+
+
+int main()
+{
+
+	lot lotto[max];
+	
+	int n;
+	int alt;
+	
+	printf("Enter N: ");
+	scanf("%d",&n);
+	printf("\n");
+	
+	for(int i=0;i<n;i++)
+	{
+		lotto[i].date.year=rand()%11+2010;
+		lotto[i].date.month=rand()%12+1;
+		lotto[i].date.day=rand()%31+1;
+		
+		
+		for(int j=0;j<6;j++)
+		{
+			
+			
+		}
+		
+		printf("%d/%02d/%02d",dates[i].year,dates[i].month,dates[i].day);	
+
+		printf("%02d",num[i]);
+		
+		printf("\n");
+		
+	}
+	
+
+	
+	
+	
+	return 0; 
+}
